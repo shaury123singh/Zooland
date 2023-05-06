@@ -1,0 +1,171 @@
+/* css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+:root{
+   --navbar-hight: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/*logo */
+#logo{
+    margin: 21px 40px;
+    border-radius: 2px;
+    border-color: black;
+}
+#logo img{
+    margin: 34px 57px;
+    height: 64px;
+    width: 68px;
+}
+
+/* navigation bar styel*/
+#navbar{
+    position:relative;
+}
+#navbar ul{
+    display: flex;
+    color:white;
+    font-family: 'Ballo Bhai',cursive;
+}
+#navbar::before{
+     content:"";
+     background-color:rgba(12, 4, 4, 0.233);
+     position: absolute;
+     height: 49%;
+     width: 100%; 
+     z-index:-1;
+     opasity: 0.4em;
+}
+ #navbar ul li{
+     list-style:none;
+     font-size:1.5rem;
+ }
+
+ #navbar ul li a{
+    display: block;
+    padding: 19px 36px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li  a:hover{
+      color:aqua;
+      background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:2px 30px;
+    height: 133px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content:"";
+    background:url('../dog.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 71%;
+    width: 100%; 
+    z-index: -1;
+    opasity: 0.4em;
+}
+.h-primary{
+    font-size: 5.4rem;
+    padding: 32px;
+}
+#home p{
+    text-align: center;
+    color:white;
+    font-size:1.9rem;
+    padding:22px ;
+}
+.btn{
+    border-radius: 515px;
+    background-color: rgb(144, 218, 25);
+    border: 5px solid black;
+    margin:2px;
+    padding:13px;
+    font-size: 1.9rem;
+    box-shadow: 7px 10px 10px rgb(44, 41, 41);
+    cursor: pointer;
+}
+#name:hover{
+    background-color: aqua;
+}
+.services{
+    display:flex;
+    flex-direction: row;
+    height: 600px;
+    padding:361px 76px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+#king h{
+    padding:34px ;
+    text-align: center;
+    font-size: 2.6rem;
+    color:black;
+    
+}
+#king p{
+    padding:34px;
+    font-size: 1.5rem;
+    color:rgb(8, 107, 8);
+}
+#king::before{
+    content:"";
+    background:url('../jiraf.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 65%;
+    width: 100%; 
+    z-index: -1;
+    opasity: 0.4em;
+}  
+.bark{
+    background-color: #7eaf38e6;
+    border-radius: 58px;
+    border:solid black;
+    height: 317px;
+    width:460px;
+    padding:34px 43px;
+    margin: 34px;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    box-shadow: 22px 13px 12px black;
+}
+#last1:hover{
+    background-color: rgb(187, 255, 0);
+    cursor: pointer;
+}
+#last2:hover{
+    background-color: rgb(187, 255, 0);
+    cursor: pointer;
+}
+#last3:hover{
+    background-color:  rgb(187, 255, 0);
+    cursor: pointer;
+}
+#home1{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding:2px 30px;
+    height: 133px;
+    justify-content: center;
+    align-items: center;
+    margin: -1044px;
+}
+#home1 h1{
+    font-size: 3.2rem;
+    color:black;
+}
